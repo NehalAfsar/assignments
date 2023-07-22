@@ -81,7 +81,7 @@ button{
     color: azure;
     border-radius: 10px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
     .data>img{
         max-width: 350px;
     }
