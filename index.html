@@ -1,168 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head id="head">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>dev.com</title>
     <style>
-        <style>
-  @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Lumanosimo&display=swap');
-</style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(235, 235, 249);
+        }
+
+        header {
+            background-color: black;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        header>h2 {
+            width: fit-content;
+            margin: 20px;
+            padding: 5px;
+            background-color: rgb(235, 235, 249);
+            border-radius: 15px;
+            color: goldenrod;
+            font-size: 2rem;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            margin: 20px 10px;
+            font-size: 3.5rem;
+            font-family: 'Dai Banna SIL', 'Arial Narrow', Arial, sans-serif
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        img {
+            height: 150px;
+            margin: 10px 10px 0px 0px;
+            border: 5px solid black;
+            border-style: ridge;
+        }
+
+        span {
+            color: rgb(45, 45, 247);
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left,
+        .right {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content {
+            float: right;
+            margin: 0px 10px;
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            background-color: black;
+            color: white;
+            text-align: end;
+            height: 50px;
+            width: 100%;
+        }
+
+        footer>p {
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        p {
+            margin: 10px 5px;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 950px) {
+
+            .main,
+            .left,
+            .right {
+                flex-direction: column;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            img {
+                height: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Nehal's Portfolio</h1>
-    <h2>I am a Web Developer</h2>
+        <h2>dev.com</h2>
     </header>
-    
-    <hr>
-    <h2><u>Movie Ranking Project</u></h2>
-    <p>This project is about creating an application that ranks movies based on their ratings and reviews from various
-        sources</p>
-    <div class="data">
-        <h3>The Best Anime According to IMDb</h3>
-        <!-- Movie ranking project -->
-        <table>
-            <th>Sl. No</th>
-            <th>Anime Name</th>
-            <th>Year</th>
-            <tr>
-                <td>1.</td>
-                <td>One Piece (TV Series)</td>
-                <td>1997–2006</td>
-            </tr>
-            <tr>
-                <td>2.</td>
-                <td>Naruto (Manga/Light
-                    Novel)
-                </td>
-                <td>1995–present</td>
-            </tr>
-            <td>3.</td>
-            <td>Dragon Ball Z
-                (TV
-                Series)<br>(Korean Drama)
-            </td>
-            <td>1994–present</td>
-            </tr>
-            <tr>
-                <td>4.</td>
-                <td>Fullmetal Alchemist
-                    V
-                    (TV
-                    series)<br>(English
-                    Action and Adventure)
-                </td>
-                <td>1998–present</td>
-            </tr>
-            <tr>
-                <td>5.</td>
-                <td>Attack on Titan
-                </td>
-                <td>2013-2023</td>
-            </tr>
-            <tr>
-                <td>6.</td>
-                <td>One Punch Man<br>
-                </td>
-                <td>2015-present</td>
-            </tr>
-            <tr>
-                <td>7.</td>
-                <td>Demon Slayer</td>
-                <td>2019-Present</td>
-            </tr>
-            <tr>
-                <td>
-                    8.
-                </td>
-                <td>Jujutsu Kaiasen
-                </td>
-                <td>2020-present</td>
+    <h1>We are a <span>Creative</span> Design Agency</h1>
+    <div class="main">
 
-            </tr>
-            <tr>
-                <td>
-                    9.
-                </td>
-                <td>Hunter x Hunter
-                </td>
-                <td>2011-2014</td>
+        <div class="left">
+            <img src="lotus.jpeg" alt="flower with water">
+            <div class="content">
+                <h2>Beauty</h2>
+                <p><strong>"Water does not resist. Water flows.<br /> When you plunge your hand into it, all you feel is
+                        a caress.”</strong></p>
+                <p>The water understands<br />
 
-            </tr>
-            <tr>
-                <td>
-                    10.
-                </td>
-                <td>Mob Psycho 100
-                </td>
-                <td>2016-2022</td>
-            </tr>
-        </table>
-        <img src="875272.png" alt="Anime">
+                    Civilization well;<br />
+
+                    It wets my foot, but prettily,<br />
+
+                    It chills my life, but wittily,<br />
+
+                    It is not disconcerted,<br />
+
+                    It is not broken-hearted:<br />
+
+                    Well used, it decketh joy,<br />
+
+                    Adorneth, doubleth joy:</p>
+            </div>
+        </div>
+        <div class="right">
+            <img src="constuction.jpg" alt="Construction Site">
+            <div class="content">
+                <h2>Construction</h2>
+                <p><strong>“Construction is the art of making a<br /> meaningful whole out of many parts.”</strong></p>
+                <p><strong>The Crane Operator</strong></p>
+                <p>He knows which lever to pull<br />
+                    and how to lift that tree,<br />
+                    he's checked the size and weight;<br />
+                    those details are the key<br />
+                    to doing his job, and doing it right—<br />
+                    he raises and lowers<br />
+                    the boom day and night;<br />
+                    he figures the distance, he studies the chart—<br />
+                    operating a crane is construction art.</p>
+            </div>
+        </div>
     </div>
-    <hr>
-
-    <div class="list">
-        <h2><u>My Personal Favourite Animes are:</u></h2>
-    <ul>
-        <li>Dragon Ball Z</li>
-        <p>The epic episodic adventure of Goku and the Z Warriors as they defend the Earth and the Universe from
-            super-powered fighters and monsters.</p>
-        <li>Demon Slayer</li>
-        <p>Demon Slayer is an anime and manga series that follows Tanjiro Kamado, a demon hunter who seeks a cure for
-            his sister Nezuko, who was turned into a demon.</p>
-        <li>Naruto</li>
-        <p>Naruto follows the adventures of a teen ninja-in-training, Naruto Uzumaki. Orphaned at birth, Naruto is a
-            practical joker who’ll do anything for attention. His grades at the Ninja Academy suck, and he’s shunned by
-            most of the adults in the village.</p>
-        <li>Jujutsu Kaisen</li>
-        <p>The story of Jujutsu Kaisen follows high school student Yuji Itadori as he joins a secret organization of
-            sorcerers in order to kill a powerful Curse named Ryomen Sukuna, of whom Yuji becomes the host.</p>
-        <li>Record of Ragnarok</li>
-        <p>Record of Ragnarok is a Japanese manga series1about a fighting tournament featuring prominent historical
-            figures against gods from various mythologies, with the fate of mankind in the balance1. The series is
-            written by Shinya Umemura and Takumi Fukui and illustrated by Ajichika. The story revolves around a council
-            of Valhalla, where the gods decide the fate of humanity every 1000 years. After seven million years, the God
-            almighty Zeus decides to end human existence</p>
-    </ul>
-    </div>
-    <hr>
-    <h2><u>Birthday Invite Project</u></h2>
-    <h3>It's My Birthday!</h3>
-    <h4>On 4th September</h4>
-    <img src="cake.webp" alt="Birthday Cake" height="300px">
-    <h4>What to bring:</h4>
-    <ul>
-        <li>Ballons (I love Ballons)</li>
-        <li>Cake ( I am really good at eating)</li>
-        <li>An appetite (There will be lots of them)</li>
-    </ul>
-    <button onclick="addCSS()" id="button">Press this Button</button>
-    <p style="text-align:center; font-weight: bolder;">Thank you for visiting my website!</p>
     <footer>
-        <a href="about.html">About Me</a>
-        <a href="#">Contact Me</a>
-        <p style="float:right;">&copy; Copyrights Reserved by Me!</p>
+        <p>Create. Develop. Design.</p>
     </footer>
-<script>
-    
-let counter = 0
-function addCSS() {
-  counter++
-  if (counter % 2 !== 0) {
-    document.getElementById("head").innerHTML = '  <title>Portfolio</title> \n<link rel="stylesheet" href="./style.css" />'
-  } else {
-
-    document.getElementById("head").innerHTML = '  <title>Portfolio</title> '
-
-  }
-}
-
-</script>
 </body>
 
 </html>
