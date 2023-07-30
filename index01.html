@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dev.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(235, 235, 249);
+        }
+
+        header {
+            background-color: black;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        header>h2 {
+            width: fit-content;
+            margin: 20px;
+            padding: 5px;
+            background-color: rgb(235, 235, 249);
+            border-radius: 15px;
+            color: goldenrod;
+            font-size: 2rem;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            margin: 20px 10px;
+            font-size: 3.5rem;
+            font-family: 'Dai Banna SIL', 'Arial Narrow', Arial, sans-serif
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        img {
+            height: 150px;
+            margin: 10px 10px 0px 0px;
+            border: 5px solid black;
+            border-style: ridge;
+        }
+
+        span {
+            color: rgb(45, 45, 247);
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left,
+        .right {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content {
+            float: right;
+            margin: 0px 10px;
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            background-color: black;
+            color: white;
+            text-align: end;
+            height: 50px;
+            width: 100%;
+        }
+
+        footer>p {
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        p {
+            margin: 10px 5px;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 950px) {
+
+            .main,
+            .left,
+            .right {
+                flex-direction: column;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>dev.com</h2>
+    </header>
+    <h1>We are a <span>Creative</span> Design Agency</h1>
+    <div class="main">
+
+        <div class="left">
+            <img src="lotus.jpeg" alt="flower with water">
+            <div class="content">
+                <h2>Beauty</h2>
+                <p><strong>"Water does not resist. Water flows.<br /> When you plunge your hand into it, all you feel is
+                        a caress.”</strong></p>
+                <p>The water understands<br />
+
+                    Civilization well;<br />
+
+                    It wets my foot, but prettily,<br />
+
+                    It chills my life, but wittily,<br />
+
+                    It is not disconcerted,<br />
+
+                    It is not broken-hearted:<br />
+
+                    Well used, it decketh joy,<br />
+
+                    Adorneth, doubleth joy:</p>
+            </div>
+        </div>
+        <div class="right">
+            <img src="constuction.jpg" alt="Construction Site">
+            <div class="content">
+                <h2>Construction</h2>
+                <p><strong>“Construction is the art of making a<br /> meaningful whole out of many parts.”</strong></p>
+                <p><strong>The Crane Operator</strong></p>
+                <p>He knows which lever to pull<br />
+                    and how to lift that tree,<br />
+                    he's checked the size and weight;<br />
+                    those details are the key<br />
+                    to doing his job, and doing it right—<br />
+                    he raises and lowers<br />
+                    the boom day and night;<br />
+                    he figures the distance, he studies the chart—<br />
+                    operating a crane is construction art.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Create. Develop. Design.</p>
+    </footer>
+</body>
+
+</html>
